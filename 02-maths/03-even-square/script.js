@@ -13,15 +13,16 @@
 
     document.getElementById("run").addEventListener("click", function() {
         // for loop over numbers till 21
-        for (let i = 1; i <= 21; i++) {
-            //strict equality, modulo zorgt voor geen vreemde kommagetallen (print enkel gehele)
+        for (var i = 1; i <= 21; i++) {
+            //strict equality
             if (Math.sqrt(i) % 1 === 0)
             {
-                //print de sqrts af
                 alert(i);
             }
 
         }
     })
-});
+
+
+})();
 
