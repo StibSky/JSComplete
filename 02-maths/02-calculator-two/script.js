@@ -36,7 +36,7 @@
             default:
                 alert("error");
         }
-        alert(z);
+        alert(solution);
     };
 // use Array to go over buttons so you can put them in cases more easily
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
