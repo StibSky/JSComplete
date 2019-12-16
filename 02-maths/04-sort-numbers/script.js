@@ -10,13 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+let numberlist = (document.getElementById("numbers").value);
+    let numberArray = numberlist.split(',');
 
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        alert(numberArray.sort((a, b) => {return a-b;}))
 
     });
 
 })();
+
+
+

@@ -14,7 +14,7 @@
     document.getElementById("run").addEventListener("click", function() {
         // for loop over numbers till 21
         for (var i = 1; i <= 21; i++) {
-            //strict equality
+            //strict equality modulo to not print random comma numbers
             if (Math.sqrt(i) % 1 === 0)
             {
                 alert(i);
