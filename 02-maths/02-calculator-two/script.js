@@ -9,10 +9,42 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function test() {
-    return true;
-}
-
 (function() {
-    return true;
+    // to get the value of an input: document.getElementById("element-id").value
+
+    var performOperation = function(maths) {
+        // perform the operation
+        var x = Number(document.getElementById("op-one").value);
+
+        var y = Number(document.getElementById("op-two").value);
+
+        var z;
+
+        switch (maths) {
+            case "addition":
+                z = (x + y);
+                break;
+            case "substraction":
+                z = (x - y);
+                break;
+            case "multiplication":
+                z = (x * y);
+                break;
+            case "division":
+                z = (x / y);
+                break;
+            default:
+                alert("error");
+        }
+        alert(z);
+    };
+
+    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
+        $btn.addEventListener("click", function() {
+            performOperation($btn.id);
+        });
+    });
 })();
+
+//copied most from online solution.
+//some parts of the code ((for each, use of array for buttons)) seemed far fetched for this solution but made sure I understand them
