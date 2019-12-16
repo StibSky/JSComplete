@@ -18,33 +18,33 @@
 
         var y = Number(document.getElementById("op-two").value);
 
-        var z;
+        var solution;
 
         switch (maths) {
             case "addition":
-                z = (x + y);
+                solution = (x + y);
                 break;
             case "substraction":
-                z = (x - y);
+                solution = (x - y);
                 break;
             case "multiplication":
-                z = (x * y);
+                solution = (x * y);
                 break;
             case "division":
-                z = (x / y);
+                solution = (x / y);
                 break;
             default:
                 alert("error");
         }
         alert(z);
     };
-
+// use Array to go over buttons so you can put them in cases more easily
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
+            //performoperation uses name of the button
             performOperation($btn.id);
         });
     });
 })();
-
-//copied most from online solution.
+//copied a lot of code from online uses cuz own solution was not elegant and didn't really use switch cases ((made sure to understand code))
 //some parts of the code ((for each, use of array for buttons)) seemed far fetched for this solution but made sure I understand them

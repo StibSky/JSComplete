@@ -11,7 +11,7 @@
 
 (function() {
 
-
+//use 3 different prompts
     var age = prompt("Please enter your age", "empty");
     var gender = prompt("Please enter your gender", "empty");
     var town = prompt("Please enter your home town", "empty");

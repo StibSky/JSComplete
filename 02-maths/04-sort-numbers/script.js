@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+    //gets value from list
 let numberlist = (document.getElementById("numbers").value);
     let numberArray = numberlist.split(',');
 
@@ -17,7 +18,7 @@ let numberlist = (document.getElementById("numbers").value);
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+
         alert(numberArray.sort((a, b) => {return a-b;}))
 
     });
