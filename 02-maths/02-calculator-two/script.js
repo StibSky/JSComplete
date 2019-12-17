@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
     // to get the value of an input: document.getElementById("element-id").value
 
     var performOperation = function(maths) {
@@ -39,12 +39,12 @@
         alert(solution);
     };
 // use list to go over buttons so you can put them in cases more easily
-     (document.querySelectorAll("button")).forEach(function($btn) {
-        $btn.addEventListener("click", function() {
+     (document.querySelectorAll("button")).forEach(function(btn) {
+        btn.addEventListener("click", function() {
             //performoperation uses name of the button ((ex addition--
-            performOperation($btn.id);
+            performOperation(btn.id);
         });
     });
-})();
-//copied a lot of code from online uses cuz own solution was not elegant and didn't really use switch cases ((made sure to understand code))
+
+//copied a lot of code from online  ((made sure to understand code, figured it out with coach and teammates))
 //some parts of the code ((for each, use of queryselectorall for buttons)) seemed far fetched for this solution but made sure I understand them
