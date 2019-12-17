@@ -11,6 +11,15 @@
 
 (function() {
 
+
+
+    document.getElementById("run").addEventListener("click", function() {
+        // perform an addition
+        let inputColor = document.getElementById("color").value;
+        document.body.style.backgroundColor = inputColor;
+        console.log(inputColor)
+    });
+
     // your code here
 
 })();
