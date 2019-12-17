@@ -12,5 +12,23 @@
 (function() {
 
     // your code here
+    for (let i = 1; i < 100; i++) {
+        //modulo dividable by 5 AND 3
+        if (i % 5 === 0 && i%3 ===0) {
+            console.log("fizzbuzz " +i)
+        }
+        //divadable by 3
+        else if (i % 3 === 0) {
+            console.log( "fizz " + i)
+        }
+        //divadable by 5
+        else if (i % 5 === 0) {
+            console.log("buzz " +i)
+        }
+        else {
+            console.log(i)
+        }
+
+    }
 
 })();
