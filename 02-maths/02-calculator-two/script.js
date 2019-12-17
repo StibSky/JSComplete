@@ -38,13 +38,13 @@
         }
         alert(solution);
     };
-// use Array to go over buttons so you can put them in cases more easily
-    Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
+// use list to go over buttons so you can put them in cases more easily
+     (document.querySelectorAll("button")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
-            //performoperation uses name of the button
+            //performoperation uses name of the button ((ex addition--
             performOperation($btn.id);
         });
     });
 })();
 //copied a lot of code from online uses cuz own solution was not elegant and didn't really use switch cases ((made sure to understand code))
-//some parts of the code ((for each, use of array for buttons)) seemed far fetched for this solution but made sure I understand them
+//some parts of the code ((for each, use of queryselectorall for buttons)) seemed far fetched for this solution but made sure I understand them

@@ -18,7 +18,7 @@
 
 
         //function to calculate factorial (( does number and multiplies it with number-1 ))
-        var factor = function(number) {
+         function factorFunc(number) {
             var result = 1;
 
             for (var i = number; i > 1; i--) {
@@ -29,7 +29,7 @@
 
         //turns input to value
         let inputNumber = document.getElementById("number").value;
-        alert(factor(inputNumber));
+        alert(factorFunc(inputNumber));
 
 
 

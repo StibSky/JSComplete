@@ -18,7 +18,7 @@ let numberlist = (document.getElementById("numbers").value);
 
     document.getElementById("run").addEventListener("click", function() {
 
-
+    // sorts the elements by comparing which one is bigger
         alert(numberArray.sort((a, b) => {return a-b;}))
 
     });
