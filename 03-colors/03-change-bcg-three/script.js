@@ -11,6 +11,15 @@
 
 (function() {
 
+
+
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        // perform an addition
+        let ranCol = "rgb" + "(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ","+ Math.floor(Math.random() * 255) + ")" ;
+        document.body.style.backgroundColor = ranCol ;
+        console.log(ranCol)
+
+    });
 
 })();
