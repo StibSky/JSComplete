@@ -28,6 +28,11 @@
         "cerise",
     ];
 
-    // your code here
+
+
+    let unique = [...new Set(fruits)];
+
+
+    console.log(unique);
 
 })();
