@@ -13,9 +13,24 @@
     document.getElementById("run").addEventListener("click", function() {
         let userInput = Number(document.getElementById("year").value);
         let newDate = new Date();
-        let inputToYear= newDate.setFullYear(userInput);
-        console.log(userInput)
+        newDate.setFullYear(userInput);
+        console.log(newDate);
         // your code here
+
+        function numberOfFridaythe13(year) {
+            let count = 0;
+            for (let month=0; month<12; month++) {
+                let d = new Date(year,month,13);
+                //checks if it is friday
+                if(d.getDay() == 5){
+                    alert(month +1);
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(numberOfFridaythe13(userInput));
 
     })
 })();
