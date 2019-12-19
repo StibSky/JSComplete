@@ -16,11 +16,12 @@
         let randoms = [...Array(10)].map(() => Math.floor(Math.random() * 100));
 
         console.log(randoms);
-        for (let i = 0; i < randoms.length; i++) {
+
+
+        for (let i = 1; i <= randoms.length; i++) {
             let arrayID = ('n-' + i);
             console.log(typeof arrayID);
-            document.getElementById(arrayID).innerHTML = randoms[i];
-
+            document.getElementById(arrayID).innerHTML = randoms[i -1];
         }
 
     })
