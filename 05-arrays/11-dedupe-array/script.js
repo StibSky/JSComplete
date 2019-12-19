@@ -34,7 +34,8 @@
     let unique = [...new Set(fruits)];
 
     //other options are with a for each with unique variable
-    //or using filter!
-
+    //or using filter!!
+    //https://wsvincent.com/javascript-remove-duplicates-array/ for reference
+    // set seemed the be the most logical one but made sure to test and tryout the other opti
 
 })();
