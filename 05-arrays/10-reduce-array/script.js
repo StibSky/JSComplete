@@ -100,7 +100,14 @@
             return parseInt(item, 10);
         });
 
-        console.log(b);
+        b[15]= 0;
+
+        console.log( b.reduce((a, b) => a + b, 0));
+
+
+
+
+
 
     })
 })();
