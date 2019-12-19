@@ -26,6 +26,7 @@
         "cerise",
     ];
     document.getElementById("run").addEventListener("click", function() {
+        //I'm using an arrow function for my for each I have also made sure I can use regular for each loops
         fruits.forEach(fruit => console.log(fruit));
     })
     // your code here
