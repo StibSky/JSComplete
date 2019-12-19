@@ -10,12 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
     let today = new Date();
     let todayDate = today.toLocaleDateString();
-    let todayFormatted = DateFormatter.format()
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: "numeric"};
+    console.log(today.toLocaleDateString("en-US", options));
 
-    document.getElementById("target").innerHTML = today.toLocaleDateString();
-
+    document.getElementById("target").innerHTML = today.toLocaleDateString("en-US", options);
 
 })();
