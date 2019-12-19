@@ -17,7 +17,9 @@
 
         console.log(randoms);
         for (let i = 0; i < randoms.length; i++) {
-            document.getElementById("n-" +i).innerHTML = randoms[i];
+            let arrayID = ('n-' + i);
+            console.log(typeof arrayID);
+            document.getElementById(arrayID).innerHTML = randoms[i];
 
         }
 
