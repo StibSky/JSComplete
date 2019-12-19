@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        let randoms = [...Array(10)].map(() => Math.floor(Math.random() * 100));
 
+        console.log(randoms);
+        for (let i = 0; i < randoms.length; i++) {
+            document.getElementById("n-" +i).innerHTML = randoms[i];
+
+        }
+
+    })
 })();
