@@ -95,12 +95,12 @@
         }
 
         var a = result;
-        a.split(',').map(function(i){
-            return parseInt(i, 10);
+
+        var b = a.split(',').map(function(item) {
+            return parseInt(item, 10);
         });
 
-        console.log(a);
-        // your code here
+        console.log(b);
 
     })
 })();
