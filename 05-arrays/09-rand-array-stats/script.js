@@ -23,6 +23,16 @@
             console.log(typeof arrayID);
             document.getElementById(arrayID).innerHTML = randoms[i -1];
         }
+        let sum= randoms.reduce((a, b) => a + b, 0) ;
+            console.log(sum);
+
+
+        document.getElementById("min").innerHTML = Math.min.apply(null, randoms);
+        document.getElementById("max").innerHTML = Math.max.apply(null, randoms);
+        document.getElementById("sum").innerHTML = randoms.reduce((a, b) => a + b, 0);
+        document.getElementById("average").innerHTML = sum/randoms.length;
+
+
 
     })
 })();
