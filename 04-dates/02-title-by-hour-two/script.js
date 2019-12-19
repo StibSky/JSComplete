@@ -10,11 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
-    let currentHour = new Date();
-    if ( currentHour.getHours() <18 &&   currentHour.getMinutes() <30 ) {
-        document.getElementById("target").innerHTML ="hello";
-    }
-    else {
-        document.getElementById("target").innerHTML = "Good Evening! ";
-    }
+
+    //haalt volledige locale tijd op en zet getallen om naar numeric
+   var currentTime = new Date().toLocaleTimeString('en-GB', { hour: "numeric", minute : "numeric"});
+
+   if (currentTime < "17:30") {
+       document.getElementById("target").innerHTML = "Hello"
+   }
+
+   else {
+       document.getElementById("target").innerHTML = "Good evening!"
+   }
+
 })();
