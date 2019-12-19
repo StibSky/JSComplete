@@ -10,9 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
-
+    let currentHour = new Date();
+    if ( currentHour.getHours() <18 &&   currentHour.getMinutes() <30 ) {
+        document.getElementById("target").innerHTML ="hello";
+    }
+    else {
+        document.getElementById("target").innerHTML = "Good Evening! ";
+    }
 })();
