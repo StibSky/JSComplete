@@ -88,7 +88,19 @@
             age: 81,
         },
     ];
+    document.getElementById("run").addEventListener("click", function() {
+        let result = "";
+        for (let i = 0; i < people.length; i++) {
+            result += people[i].age + ",";
+        }
 
-    // your code here
+        var a = result;
+        a.split(',').map(function(i){
+            return parseInt(i, 10);
+        });
 
+        console.log(a);
+        // your code here
+
+    })
 })();
