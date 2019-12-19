@@ -11,8 +11,11 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let today = new Date();
+    let todayDate = today.toLocaleDateString();
+    let todayFormatted = DateFormatter.format()
 
-    // your code here
+    document.getElementById("target").innerHTML = today.toLocaleDateString();
+
 
 })();
