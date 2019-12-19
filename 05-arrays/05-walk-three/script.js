@@ -42,6 +42,7 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
+        //using a foreach loop combined with only checking the firstname
         people.forEach(name => console.log(name.firstname));
     })
 

@@ -90,7 +90,9 @@
     ];
     document.getElementById("run").addEventListener("click", function() {
         for (let i = 0; i < people.length; i++) {
+            //for every entree checking first and last name
             if (people[i].firstname == "Jean"  && people[i].lastname == "Dupont" ) {
+                //printing the index
                 alert(people[i].email +"index in array = " + i);
 
             }
