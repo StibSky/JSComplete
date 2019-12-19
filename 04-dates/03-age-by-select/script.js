@@ -18,7 +18,7 @@
         currentMonths=  document.getElementById("dob-month").value;
         currentYear=    document.getElementById("dob-year").value;
 
-        //zet input om in een string van getallen, split deze om een datum te krijgen
+        //puts input into string of numbers and cuts into date
         let dateString = currentDay + "/" + currentMonths + "/" + currentYear;
         let toDate = new Date(dateString);
         dateString = toDate.getFullYear() + "/" + toDate.getMonth() + "/" + toDate.getDate();
