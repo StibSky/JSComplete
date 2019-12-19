@@ -10,8 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-//time to work with Date()
+
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    //put in variable first to use getters
+let currentHour = new Date();
+console.log(currentHour.getHours());
+if (currentHour.getHours() < 18) {
+    document.getElementById("target").innerHTML = "hello";
+}
+
+else {
+    document.getElementById("target").innerHTML = "Good Evening! ";
+}
     // your code here
 
 })();
