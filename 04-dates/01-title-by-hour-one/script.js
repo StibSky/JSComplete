@@ -10,9 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
+//time to work with Date()
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
     // your code here
 
 })();
