@@ -26,6 +26,12 @@
         "cherry",
     ];
 
+    document.getElementById("run").addEventListener("click", function() {
+        //array starts at 0
+        alert(fruits[3])
+
+    })
+
     // your code here
 
 })();
