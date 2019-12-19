@@ -12,25 +12,24 @@
 (function() {
     document.getElementById("run").addEventListener("click", function() {
         let userInput = Number(document.getElementById("year").value);
-        let newDate = new Date();
-        newDate.setFullYear(userInput);
-        console.log(newDate);
-        // your code here
 
-        function numberOfFridaythe13(year) {
-            let count = 0;
+
+        function monthsWithFriday13(year) {
             for (let month=0; month<12; month++) {
                 let d = new Date(year,month,13);
                 //checks if it is friday
                 if(d.getDay() == 5){
-                    alert(month +1);
-                    count++;
+                    //prints the months that have a friday the 13th
+                    const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"
+                    ];
+                    alert(monthNames[Number(month)]);
+
                 }
             }
-            return count;
         }
 
-        console.log(numberOfFridaythe13(userInput));
+        console.log(monthsWithFriday13(userInput));
 
     })
 })();
