@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        let userInput = Number(document.getElementById("year").value);
+        let newDate = new Date();
+        let inputToYear= newDate.setFullYear(userInput);
+        console.log(userInput)
+        // your code here
 
-    // your code here
-
+    })
 })();
