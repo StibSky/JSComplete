@@ -18,10 +18,15 @@
         currentMonths=  document.getElementById("dob-month").value;
         currentYear=    document.getElementById("dob-year").value;
 
-        console.log(currentDay+currentMonths+currentYear);
+        let dateString = currentDay + "/" + currentMonths + "/" + currentYear;
+        let toDate = new Date(dateString);
+        dateString = toDate.getFullYear() + "/" + toDate.getMonth() + "/" + toDate.getDate();
+        console.log(toDate);
+
+
     });
 
-    let birthdayString = currentMonths+currentDay+currentYear;
-    let birthdayDate = 
+
+
 
 })();
