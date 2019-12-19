@@ -90,6 +90,7 @@
     ];
 
     document.getElementById("run").addEventListener("click", function() {
+        //filters to see if age is over 17
         let grownup = people.filter(name => {
             return name.age > 17;
         });

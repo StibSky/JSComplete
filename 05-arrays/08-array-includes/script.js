@@ -26,6 +26,16 @@
         "cherry",
     ];
 
+    document.getElementById("run").addEventListener("click", function() {
+        //use array includes to check for an element
+if (fruits.includes("apple")) {
+    alert("array contains apple? yes")
+}
+else {
+    alert("no apples in array")
+}
+
+    })
     // your code here
 
 })();
