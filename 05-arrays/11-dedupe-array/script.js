@@ -29,10 +29,12 @@
     ];
 
 
-
+//set lets you look for only unique elements
+// ... is spread operator here
     let unique = [...new Set(fruits)];
 
+    //other options are with a for each with unique variable
+    //or using filter!
 
-    console.log(unique);
 
 })();
