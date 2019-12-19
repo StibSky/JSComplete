@@ -12,5 +12,16 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        // perform an addition
+        currentDay=     document.getElementById("dob-day").value;
+        currentMonths=  document.getElementById("dob-month").value;
+        currentYear=    document.getElementById("dob-year").value;
+
+        console.log(currentDay+currentMonths+currentYear);
+    });
+
+    let birthdayString = currentMonths+currentDay+currentYear;
+    let birthdayDate = 
 
 })();
