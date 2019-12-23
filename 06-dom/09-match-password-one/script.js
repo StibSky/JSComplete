@@ -13,4 +13,15 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function() {
+        //compares values of pass one and pass two
+        if (document.getElementById("pass-one").value !== document.getElementById("pass-two").value) {
+            document.getElementById("pass-two").style.borderColor = "red";
+            document.getElementById("pass-one").style.borderColor = "red";
+        }
+        else {
+            document.getElementById("pass-two").style.borderColor = "gray";
+            document.getElementById("pass-one").style.borderColor = "gray";
+        }
+    })
 })();

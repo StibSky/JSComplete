@@ -20,9 +20,11 @@
     //makes table with 10 rows
     for(let i = 1; i <= 10; i++){
         let tr = newTable.insertRow();
+
+        //creates 10 columns
         for(let j=1; j<=10; j++){
             let col = tr.insertCell(j-1);
-            // show the multiplication results
+            // show the results
             col.innerHTML = i * j ;
         }
     }
