@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    //get data-image attribute
+    let dataSource = document.getElementById("source").getAttribute("data-image");
+    console.log(dataSource);
+
+    //create new img that uses value from the other
+    let img = document.createElement("img");
+    img.setAttribute("src", dataSource);
+
+    //appendchild appends (adds) a node as a last child of a node
+    document.getElementById("target").appendChild(img);
+    console.log(document.getElementById(("target")));
+
+
+    //remove old element
+    document.getElementById("source").remove();
 
 })();

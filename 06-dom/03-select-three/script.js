@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
+    let targets = document.querySelectorAll(".target");
+
+    targets.forEach(function(item){
+        item.innerHTML = "owned";
+    });
 
 })();
