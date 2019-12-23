@@ -22,10 +22,7 @@
         let td = tr.insertCell();
         //puts text in each cell
         td.appendChild(document.createTextNode('Cell'));
-        td.style.border = '1px solid black';
     }
-
-    //inserts table in target
     document.getElementById("target").appendChild(newTable);
 
 })();
