@@ -12,5 +12,13 @@
 (function() {
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        //compares values of pass one and pass two
+        if (document.getElementById("pass-one").value !== document.getElementById("pass-two").value) {
+            document.querySelectorAll("input").forEach(password => password.setAttribute("class", "error"))
+        }
+        else {
+            document.querySelectorAll("input").forEach(password => password.classList.remove("error"))
+        }
+    })
 })();
