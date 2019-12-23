@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
 
+// set maxlength on pass-one
+    document.getElementById("pass-one").setAttribute("maxlength", "10");
+    //keydown = on key pressed
+    document.getElementById("pass-one").addEventListener("keydown", function () {
+        //changes counter to the length of password dynamically
+        document.getElementById("counter").innerHTML = document.getElementById("pass-one").value.length + "/10"
+
+    })
 })();
