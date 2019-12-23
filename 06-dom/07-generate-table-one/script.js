@@ -12,5 +12,20 @@
 (function() {
 
     // your code here
+    let newTable = document.createElement('table');
+    newTable.style.width  = '100px';
+    newTable.style.border = '1px solid black';
+
+    //makes table with 10 rows
+    for(let i = 0; i < 10; i++){
+        let tr = newTable.insertRow();
+        let td = tr.insertCell();
+        //puts text in each cell
+        td.appendChild(document.createTextNode('Cell'));
+        td.style.border = '1px solid black';
+    }
+
+    //inserts table in target
+    document.getElementById("target").appendChild(newTable);
 
 })();

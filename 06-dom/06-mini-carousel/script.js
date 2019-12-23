@@ -30,7 +30,7 @@
             number++;
         }
 
-        //makes image start on first again 
+        //makes image start on first again
         else {
             number =0;
         }
