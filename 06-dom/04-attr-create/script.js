@@ -21,6 +21,7 @@
     img.setAttribute("src", dataSource);
 
     //appendchild appends (adds) a node as a last child of a node
+    //also useable in arrays
     document.getElementById("target").appendChild(img);
     console.log(document.getElementById(("target")));
 

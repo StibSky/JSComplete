@@ -21,4 +21,23 @@
 
     // your code here
 
+    let number = 0;
+
+    document.getElementById("next").addEventListener("click", function() {
+        let img = document.getElementsByTagName("img")[0];
+        if (number <=4) {
+            img.setAttribute("src", gallery[number]);
+            number++;
+        }
+
+        //makes image start on first again 
+        else {
+            number =0;
+        }
+
+        })
+
+
+
+
 })();

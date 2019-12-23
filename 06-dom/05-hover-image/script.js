@@ -12,6 +12,7 @@
 (function() {
 
     //select img (first tag)
+    //can also use queryselector
     let img = document.getElementsByTagName("img")[0];
     console.log(img);
 
