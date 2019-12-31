@@ -22,11 +22,21 @@
      "x-large",
      "xx-large"
  ];
+ let reversesize = [
+     "xx-large",
+     "x-large",
+     "large",
+     "medium",
+     "small",
+     "x-small",
+     "xx-small"
 
- reversesize = textsizes.reverse();
- console.log(reversesize);
-
-   textsizes= textsizes.concat(reversesize);
+ ];
+    textsizes= textsizes.concat(reversesize);
+ console.log(textsizes);
+    for (let i = 0; i < 3; i++) {
+    textsizes= textsizes.concat(textsizes)
+    }
     console.log(textsizes);
     let textElement = document.getElementById("target");
     let text = textElement.innerText;
