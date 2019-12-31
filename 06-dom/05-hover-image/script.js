@@ -17,6 +17,9 @@
     console.log(img);
 
     //hover = mouseover
+    img.addEventListener("mouseover", function () {
+        
+    })
 
     img.addEventListener("mouseover", function () {
         img.setAttribute("src", "../../_shared/img/kiss-wink-heart.svg");
@@ -25,8 +28,7 @@
     //add mouseout, otherwise image gets stuck on the mouseover image
     img.addEventListener('mouseout', function () {
         img.setAttribute("src", "../../_shared/img/kiss.svg");
-    })
-
+    });
 
 
 })();

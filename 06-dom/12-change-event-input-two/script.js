@@ -21,11 +21,11 @@
         function checkInput() {
             //regex used to filter for specific characters or numbers etc
             // .* in regex means 0 or more of ANY character
-            let twoNumbers = new RegExp(".*[0-9].*[0-9]");
+            let twoNumbers = new RegExp("[0-9].*[0-9]");
             //checks if input is 8 char long and
             // at least 8 characters long and contains at least two numbers
             //test method checks for tests in a string, ideal for RegEx
-            return (input.value.length >= 7) && (twoNumbers.test(input.value))
+            return (input.value.length >= 8) && (twoNumbers.test(input.value))
         }
         if (checkInput() === true){
             validInput.innerHTML = "ok";
