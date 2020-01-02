@@ -11,6 +11,26 @@
 
 (function() {
 
-    // your code here
+
+    let i = 0;
+    let text = document.getElementById("target").innerHTML;
+
+    //empty the innerhtml so you can insert typewriter
+    document.getElementById("target").innerHTML="";
+
+    function typewriter(){
+
+        if (i < text.length){
+            document.getElementById("target").innerHTML += text.charAt(i);
+            i++;
+            //random speed
+            let speed = Math.round(Math.random() * 500);
+            setTimeout(typewriter, speed);
+        }
+    }
+
+    typewriter();
+
 
 })();
+
