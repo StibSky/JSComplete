@@ -11,6 +11,33 @@
 
 (function() {
 
-    // your code here
+    // getbytagname to get all buttons
+    const buttons = document.getElementsByTagName("button");
+
+    // go over all buttons with for loop
+    for (let i =0; i<buttons.length; i++){
+        buttons[i].addEventListener("click", function(){
+            let minVal = buttons[i].getAttribute("data-min");
+            let maxVal = buttons[i].getAttribute("data-max");
+            let currentVal = buttons[i].innerHTML;
+            //ups value by one on every click
+            currentVal++;
+           // console.log(currentVal);
+            buttons[i].innerHTML = currentVal;
+
+            //makes sure it writes a 0 instead of deleting a number when in single digit
+            if (buttons[i].innerHTML < 10) {
+                buttons[i].innerHTML = "0" +buttons[i].innerHTML;
+            }
+
+            document.getElementById("target").innerHTML =
+                "+" + buttons[0].innerHTML
+                + (buttons[1].innerHTML)
+                + (buttons[2].innerHTML)
+                + (buttons[3].innerHTML)
+        });
+    }
+
+
 
 })();
