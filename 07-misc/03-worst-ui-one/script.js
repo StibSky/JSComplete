@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    let slider = document.getElementById("slider");
+    let variable = document.getElementById("target");
 
-    // your code here
-
+    slider.addEventListener('input', function(e) {
+        //sets slider value to the min-max of innerHMTL
+        variable.innerHTML = "0" + slider.value;
+    });
 })();
