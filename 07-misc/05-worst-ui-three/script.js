@@ -28,7 +28,7 @@
             console.log(input[i].value);
             input[i].value = randomVal;
             input[0].value = randomBig;
-           
+
 
             document.getElementById("target").innerHTML = "+0" +
                 input[0].value +

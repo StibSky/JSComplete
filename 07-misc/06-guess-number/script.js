@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    let solution = Math.floor(Math.random()*(100-1) +1);
+    let guessedNumber;
+    let numberGuesses = 1;
+
+    while (parseInt(guessedNumber) !== solution) {
+        //generates number 1-100
+        guessedNumber = prompt("guess a number between 1 and 100");
+        if (parseInt(guessedNumber) > solution) {
+            alert("guess lower");
+            numberGuesses++;
+        }
+        else if (parseInt(guessedNumber) < solution) {
+            alert("guess higher");
+            numberGuesses++;
+        }
+    }
+     alert("that is correct!! you needed " + numberGuesses + " guesses")
 
 })();
