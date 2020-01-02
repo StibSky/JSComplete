@@ -22,7 +22,7 @@
             let currentVal = buttons[i].innerHTML;
             //ups value by one on every click
             currentVal++;
-           // console.log(currentVal);
+            // console.log(currentVal);
             buttons[i].innerHTML = currentVal;
 
             //makes sure it writes a 0 instead of deleting a number when in single digit
