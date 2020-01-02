@@ -10,7 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
+    let button = document.getElementById("increment");
+    let counter = document.getElementById("target");
 
-    // your code here
+    button.addEventListener("click", function (){
+        counter.innerHTML++;
+        //store
+        localStorage.setItem("lastCount", counter.innerHTML);
+
+    });
+
+
+    // Retrieve
+    counter.innerHTML = localStorage.getItem("lastCount");
+
 
 })();

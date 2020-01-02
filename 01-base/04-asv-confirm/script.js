@@ -12,14 +12,14 @@
 (function() {
 
 //use 3 different prompts
-    var age = prompt("Please enter your age", "empty");
-    var gender = prompt("Please enter your gender", "empty");
-    var town = prompt("Please enter your home town", "empty");
+    let age = prompt("Please enter your age", "empty");
+    let gender = prompt("Please enter your gender", "empty");
+    let town = prompt("Please enter your home town", "empty");
     confirmation();
 
 
     function confirmation() {
-        var txt;
+        let txt;
         if (confirm("Please confirm")) {
             alert(age + " " +gender + " " + town);
         } else {

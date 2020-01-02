@@ -23,6 +23,7 @@
             console.log(typeof arrayID);
             document.getElementById(arrayID).innerHTML = randoms[i -1];
         }
+
         let sum= randoms.reduce((a, b) => a + b, 0) ;
             console.log(sum);
 

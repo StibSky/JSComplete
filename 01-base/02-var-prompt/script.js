@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-    var name = prompt("Please enter your name", "empty");
+    let name = prompt("Please enter your name");
 
     alert(name);
 
