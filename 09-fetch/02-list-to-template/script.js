@@ -20,6 +20,7 @@
                 console.log(document.getElementById("tpl-hero").content);
             let temp = document.getElementById("tpl-hero");
 
+
                 for (let i = 0; i <data.heroes.length ; i++) {
                     //make a copy of the html content so you can paste it in the target
                     let copy = temp.content.cloneNode(true);
