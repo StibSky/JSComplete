@@ -21,9 +21,14 @@
             let maxVal = buttons[i].getAttribute("data-max");
             let currentVal = buttons[i].innerHTML;
             //ups value by one on every click
-            currentVal++;
-            // console.log(currentVal);
-            buttons[i].innerHTML = currentVal;
+
+            if (currentVal < maxVal) {
+                currentVal++;
+                // console.log(currentVal);
+                buttons[i].innerHTML = currentVal;
+            }
+
+
 
             //makes sure it writes a 0 instead of deleting a number when in single digit
             if (buttons[i].innerHTML < 10) {
