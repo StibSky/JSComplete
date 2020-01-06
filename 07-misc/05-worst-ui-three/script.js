@@ -17,17 +17,20 @@
 
     // go over all buttons with for loop
     for (let i =0; i<input.length; i++){
+        function slot() {
+            let  randomNr = Math.floor(Math.random()*99);
+            input[i].value = randomNr;
+        }
+        const trrr = setInterval(slot, 100);
         buttons[i].addEventListener("click", function(){
             let minVal = input[i].getAttribute("data-min");
             let maxVal = input[i].getAttribute("data-max");
-            console.log(minVal, maxVal);
 
             let randomVal = Math.floor(Math.random()*(maxVal-minVal) + minVal);
             let randomBig = Math.floor(Math.random()*(499-460) + 460);
             // console.log(currentVal);
-            console.log(input[i].value);
-            input[i].value = randomVal;
             input[0].value = randomBig;
+            clearInterval(trrr);
 
 
             document.getElementById("target").innerHTML = "+0" +
