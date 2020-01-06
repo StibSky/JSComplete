@@ -11,4 +11,25 @@
 
 (() => {
     // your code here
-})();
+    document.getElementById("run").addEventListener("click", function() {
+        fetch('http://localhost:12345/_shared/api.json')
+            .then(function (link) {
+                return link.json();
+            })
+            .then(function (data) {
+                console.log(document.getElementById("tpl-hero").content);
+            let temp = document.getElementById("tpl-hero");
+
+                for (let i = 0; i <data.heroes.length ; i++) {
+                    //make a copy of the html content so you can paste it in the target
+                    let copy = temp.content.cloneNode(true);
+                    //puts the array items in the innerhtml of the copy
+                    copy.querySelector(".name").innerHTML = data.heroes[i].name;
+                    copy.querySelector(".alter-ego").innerHTML = data.heroes[i].alterEgo;
+                    copy.querySelector(".powers").innerHTML = data.heroes[i].abilities;
+                    //appends the 
+                    document.getElementById("target").appendChild(copy);
+                }
+        })
+    })
+    })();

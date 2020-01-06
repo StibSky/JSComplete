@@ -15,10 +15,12 @@
         fetch('http://localhost:12345/_shared/api.json')
             .then(function (link) {
                 return link.json();
-            })          // gets jason
+            })
+            // gets jason
             .then(function (data) {
                 return console.log(data)
-            })            // console logs the data
+            })
+        // console logs the data
         ;
     })
 })();
