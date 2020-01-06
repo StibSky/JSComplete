@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        fetch('http://localhost:12345/_shared/api.json')
+            .then(function (response) {
+                return response.json();
+            })          // gets jason
+            .then(function (data) {
+                return console.log(data)
+            })            // console logs the data
+        ;
+    })
 })();
