@@ -9,6 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (() => {
     // your code here
+    let hero = {}; // empty array for multiple elements;
+    document.getElementById("run").addEventListener("click", function() {
+        fetch('http://localhost:12345/_shared/api.json')
+            .then(function (link) {
+                return link.json();
+            })
+            .then(function (data) {
+             let newName = document.getElementById("hero-name").value;
+             let newEgo = document.getElementById("hero-alter-ego").value;
+             let newPowers = document.getElementById("hero-powers").value;
+                hero ["id"] = data.heroes.length +1;
+                hero ["name"] = newName;
+                hero ["alterEgo"] = newEgo;
+                hero ["abilities"] = []; /*array in array */
+                hero.abilities.push(newPowers);
+                //push the new hero in the array
+                data.heroes.push(hero);
+                console.log(data.heroes)
+            })
+
+    })
 })();
